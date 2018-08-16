@@ -69,7 +69,7 @@
               <br/> <strong>Github:</strong> https://github.com/sachinbs/
               <a href="https://github.com/sachinbs/" target="_blank" class="card-link">[...]</a>
               <br/> <strong>Resume:</strong>
-              <a href="docs/Resume_Sachin_BS.pdf" target="_blank" class="card-link">[...]</a>
+              <a href="docs/Resume_Sachin_BS.pdf" target="_blank" class="card-link">View Resume</a>
               <br/>
             </p>
           </div>
@@ -78,12 +78,13 @@
     </div>
     <hr class="my-4">
     <h3>Hello, I am Sachin!</h3>
-    <p>
-      I am a graduate student in Computer Engineering at Syracuse University specializing in Software Development.
+    <p class="lead">
+      A graduate student in Computer Engineering at Syracuse University, actively looking for the right platform to leverage my
+      technical and professional skills in Software Development.
     </p>
-    <p>
+    <p class="lead">
       I have successfully completed courses in Object Oriented Design, Software Modelling and Analysis, Advanced Data Structures
-      and Algorithms, Design Patterns, Internet Programming, DBMS and Data Mining.
+      and Algorithms, Design Patterns and Internet Programming.
     </p>
   </div>
 
@@ -99,21 +100,23 @@
         <br/> GPA: 3.67 / 4.0
         <br/> <a href="docs/Transcript.pdf" target="_blank">View Transcript</a>
         <br/>
-        <br/> Courses: Software Modeling and Analysis, Object Oriented Design, Advanced Data Structures and Algorithms, Design
-        Patterns, DBMS, Internet Programming, Advanced Computer Architecture, Fundamentals of Data Mining and Knowledge Mining
-        and Social Media Mining
-        <br/>
+        <br/> <strong>Courses:</strong> Software Modeling and Analysis, Object Oriented Design, Advanced Data Structures
+        and Algorithms, Design Patterns, DBMS, Internet Programming, Advanced Computer Architecture, Fundamentals of Data
+        Mining and Knowledge Mining and Social Media Mining
         <br/>
       </p>
+
+      <hr class="my-1">
+
       <p>
         <strong>UVCE, Bangalore University</strong>, Bangalore, India
         <br/> Bachelor of Engineering in Electrical and Electronics Engineering
         <br/> Graduation Date: June 2014
         <br/> Percentage: 78.57 % (First Class with Distinction)
         <br/>
-        <br/> Courses: Analog Electronics Circuits, Computer Architecture, Microprocessors and Microcontrollers, Electrical
-        and Electronics Measurement, Electrical Machines, Power Electronics, Transmission and Distribution, Power Systems
-        <br/>
+        <br/> <strong>Courses:</strong> Analog Electronics Circuits, Computer Architecture, Microprocessors and Microcontrollers,
+        Electrical and Electronics Measurement, Electrical Machines, Power Electronics, Transmission and Distribution, Power
+        Systems
       </p>
     </div>
 
@@ -122,8 +125,10 @@
     <!-- Technical skills -->
     <div id="TechSkills">
       <h2 style="padding-top: 50px; margin-top: -50px;">Technical Skills and Interests</h2>
-      <p class="lead">
-        Technical skills
+      <p>
+        <strong>Programming Languages:</strong> C++, C#, Python, SQL, HTML, CSS, JavaScript, R, Java, C, Assembly level programming
+        <br/><strong>Tools and Technologies:</strong> Visual Studio, WCF, WPF, ASP.NET MVC, RStudio, PSPICE, LTSPICE, SmarTest
+        (Advantest), Windows, Linux, UNIX
       </p>
     </div>
 
@@ -132,8 +137,169 @@
     <!-- Projects -->
     <div id="Projects">
       <h2 style="padding-top: 50px; margin-top: -50px;">Projects</h2>
-      <p class="lead">
-        Projects
+
+      <p>
+        <strong>Remote Build Server (C#, Automated Testing, WCF, WPF, Continuous Integration)</strong>
+        <br/> An automated tool that supports testing of libraries from a test request
+        <br/>
+        <ul>
+          <li>
+            Implements Client (GUI provided through WPF) to generate test requests based on the selection of code files (present in the
+            Repository) made on the GUI
+          </li>
+          <li>
+            Implements Mock Repository to store the source code, test requests, build and test logs and to transfer files to the Build
+            Server
+          </li>
+          <li>
+            Implements the Core Build Server which builds the source code files into test libraries (dll's)
+          </li>
+          <li>
+            Implements Test Harness to load and execute the libraries
+          </li>
+          <li>
+            All the components in the federation communicate through WCF
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>Dependency based Code Publisher (C++, XML, NoSQL DB, HTML, CSS, JavaScript)</strong>
+        <br/> A tool that publishes source code files as web pages with embedded child links. Each link refers to a code
+        file that the displayed code file depends on
+        <br/>
+        <ul>
+          <li>
+            The code publisher is embedded in a repository which supports publishing of source code as web pages
+          </li>
+          <li>
+            Generates HTML files for each of the C++ source code files which captures the content of the source file
+          </li>
+          <li>
+            Provides embedded links to the dependant files on top of the web page and captures the content of the source code under it
+          </li>
+          <li>
+            Provides facility to expand or collapse class bodies, methods and global functions (of the source code) using JavaScript
+            and page styling using CSS
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>Type based dependency analysis (C++, XML, NoSQL DB)</strong>
+        <br/> Extracts lexical content from source code files and performs type and dependency analysis
+        <br/>
+        <ul>
+          <li>
+            Performs type analysis to find all the types and and global functions defined in each of a collection of C++ source files
+          </li>
+          <li>
+            For each file in a specified file collection, finds, all other files on which they depend
+          </li>
+          <li>
+            Uses NoSQL database to store and retrieve dependency information
+          </li>
+          <li>
+            Finds Strong Components (using Tarjan's algorithm) defined by the relationships evaluated in the dependency anaysis
+          </li>
+          <li>
+            Persists results to an XML file
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>Key-Value in-memory database using NoSQL database (C++, XML, NoSQL DB)</strong>
+        <br/> A NoSQL DB to store parent-child relationship. DB created using unordered_map (C++ STL)
+        <br/>
+        <ul>
+          <li>
+            Supports data (value) of template type (data can be a string or a container or a data structure etc.)
+          </li>
+          <li>
+            Persists contents of the database to an XML file on command
+          </li>
+          <li>
+            Supports queries of keys, queries of specified data pattern in the template section using REGular EXpressions
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>An Evaluation Model for Human Resource Management in Organizations using Classification and Association algorithms
+          (R, Feature Engineering, Apriori Algorithm, Decision Trees, Classifiers)</strong>
+        <br/> Evaluated the attributes behind the attrition rate in a company using a Human Resource dataset and provided
+        corrective strategies
+        <br/>
+        <ul>
+          <li>
+            Performed data pre-processing, data exploration and added attributes (Feature Engineering) based on the exploration results
+            to improve the features of the dataset
+          </li>
+          <li>
+            Performed Association Analysis using Apriori algorithm to uncover relationships between attributes
+          </li>
+          <li>
+            Trained and implemented C5.0, CART and Random Forest decision trees to predict the reason for attrition and compared the
+            efficiencies
+          </li>
+          <li>
+            Trained and implemented Naive Bayes' classifier to predict the reason for attrition
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>Product Comparison (Social Media Mining, Python, Twitter, Natural Language Processing, Sentiment Analysis)</strong>
+        <br/> A tool which provides comparison of attributes between two companies (ex. Samsung and Apple) based on the data
+        mined from the tweets addressed to them. Segregates the attributes into positive, negative and neutral based on Sentiment
+        Analysis
+        <br/>
+        <ul>
+          <li>
+            Collected ~15000 tweets for a particular user and different hashtags associated with that user using Tweepy API
+          </li>
+          <li>
+            Processed the tweets by removing emojis, special characters, links etc.
+          </li>
+          <li>
+            Performed sentiment analysis on the data using NLTK and segregated the tweets into positive, negative and neutral
+          </li>
+          <li>
+            Selected attributes based on the frequency distribution of the tweets and plotted the Sankey diagram, word cloud to compare
+            the attributes with the other entity
+          </li>
+        </ul>
+      </p>
+
+      <hr class="my-1">
+
+      <p>
+        <strong>UniCart (Web Application, HTML, CSS, JavaScript, MySQL, PHP)</strong>
+        <br/> A common marketplace for university students to buy, sell or rent any used items. Provides facilities for seller
+        to put items for sale, for other users to bid on an item or rent or buy
+        <br/>
+        <ul>
+          <li>
+            Web application created using MVC architecture
+          </li>
+          <li>
+            Pages created using PHP, with SQL server for the database
+          </li>
+          <li>
+            Provides a clean UI for users to create account/ register themselves. Pages to sell, rent and buy items
+          </li>
+        </ul>
       </p>
     </div>
 
@@ -142,7 +308,7 @@
     <!-- Professional experience -->
     <div id="ProfExp">
       <h2 style="padding-top: 50px; margin-top: -50px;">Professional Experience</h2>
-      <p class="lead">
+      <p>
         Professional experience
       </p>
     </div>
@@ -152,7 +318,7 @@
     <!-- Others -->
     <div id="Others">
       <h2 style="padding-top: 50px; margin-top: -50px;">Others</h2>
-      <p class="lead">
+      <p>
         Others
       </p>
     </div>
